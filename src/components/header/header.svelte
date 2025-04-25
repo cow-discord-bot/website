@@ -10,7 +10,6 @@
 	import './style.scss';
 
 	const navLinks = [
-		{ name: 'Home', url: '/' },
 		{ name: 'Dashboard', url: 'dashboard' },
 		{ name: 'Documentation', url: 'docs' },
 		{ name: 'Source', url: `https://github.com/${PUBLIC_GITHUB_USERNAME}/${PUBLIC_GITHUB_REPO}` },
@@ -30,10 +29,10 @@
 
 <header>
 	<div class="container">
-		<div class="logo">
+		<a href="/" class="logo">
 			<Icon icon="twemoji:cow-face" />
 			<h2>{PUBLIC_BOT_NAME}</h2>
-		</div>
+		</a>
 
 		<div class="mobile-menu-button" on:click={toggleMobileMenu}>
 			<Icon icon={mobileMenuOpen ? 'mdi:close' : 'mdi:menu'} width="24" height="24" />
