@@ -3,7 +3,6 @@
 	import {
 		PUBLIC_BOT_NAME,
 		PUBLIC_GUILD_INVITE,
-		PUBLIC_BOT_INVITE,
 		PUBLIC_GITHUB_USERNAME,
 		PUBLIC_GITHUB_REPO
 	} from '$env/static/public';
