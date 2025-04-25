@@ -38,7 +38,7 @@
 	export { className as class };
 </script>
 
-<div>
+<div class="faq">
 	<h1 class="accordion-title">FAQ</h1>
 	<div class="accordion {className}" {...$root}>
 		{#each items as { id, title, description }, i}
