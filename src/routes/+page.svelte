@@ -20,17 +20,17 @@
 		{
 			id: 'item-1',
 			title: 'Can I use my own bot account?',
-			description: `Yes! There's have a guide on how to set it up for yourself on our <a href='https://github.com/${PUBLIC_GITHUB_USERNAME}/${PUBLIC_GITHUB_REPO}'>Github</a>. You will have to host it yourself though because that could get pretty expensive for me`
+			description: `Yes! There's have a guide on how to set it up for yourself on our <a href='https://github.com/${PUBLIC_GITHUB_USERNAME}/${PUBLIC_GITHUB_REPO}'>Github</a>.<br>You will have to host it yourself though because that could get pretty expensive for me if I did it for you.`
 		},
 		{
 			id: 'item-2',
 			title: 'How do i do <insert thing>?',
-			description: `Check out the documentation, if you cant find what you're looking for there, then feel free to ask in the <a href=${PUBLIC_GUILD_INVITE}>Discord</a>`
+			description: `Check out the documentation, if you cant find what you're looking for there, then feel free to ask in the <a href=${PUBLIC_GUILD_INVITE}>Discord</a>.`
 		},
 		{
 			id: 'item-3',
 			title: 'Is it any good?',
-			description: "<a href='https://news.ycombinator.com/item?id=3067434'>Yes</a>"
+			description: "<a href='https://news.ycombinator.com/item?id=3067434'>Yes</a>."
 		}
 	];
 
