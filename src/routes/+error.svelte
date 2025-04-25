@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import './error.scss';
 
 	let message = $derived(page.error?.message ?? 'Unknown error.');
