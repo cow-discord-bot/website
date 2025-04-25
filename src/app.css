@@ -1,53 +1,32 @@
 :root {
-	--background: hsl(222.2 84% 4.9%);
-	--foreground: hsl(210 40% 98%);
+	--background: hsl(220 15% 8%);
+	--foreground: hsl(220 10% 90%);
 
-	--primary: hsl(217.2 91.2% 59.8%);
-	--primary-foreground: hsl(222.2 47.4% 11.2%);
-	--primary-hover: hsl(hsl(217.2 91.2% 65%));
+	--primary: hsl(215 25% 40%);
+	--primary-foreground: hsl(220 10% 95%);
+	--primary-hover: hsl(215 25% 45%);
 
-	--secondary: hsl(217.2 32.6% 17.5%);
-	--secondary-foreground: hsl(210 40% 98%);
+	--secondary: hsl(220 12% 16%);
+	--secondary-foreground: hsl(220 10% 80%);
 
-	--destructive: hsl(0 62.8% 30.6%);
-	--destructive-foreground: hsl(210 40% 98%);
+	--destructive: hsl(0 30% 40%);
+	--destructive-foreground: hsl(220 10% 95%);
 
-	--muted: hsl(217.2 32.6% 17.5%);
-	--muted-variant: hsl(217.2 27% 22%);
-	--muted-foreground: hsl(215 20.2% 65%);
+	--muted: hsl(220 12% 12%);
+	--muted-variant: hsl(220 10% 18%);
+	--muted-foreground: hsl(220 10% 60%);
 
-	--accent: hsl(180 75% 35%);
-	--accent-foreground: hsl(210 40% 98%);
+	--accent: hsl(210 20% 35%);
+	--accent-foreground: hsl(220 10% 95%);
 
-	--border: hsl(217.2 32.6% 17.5%);
-	--input: hsl(217.2 32.6% 17.5%);
-	--ring: hsl(217.2 91.2% 59.8%);
+	--border: hsl(220 12% 25%);
+	--input: hsl(220 12% 16%);
+	--ring: hsl(215 25% 40%);
+	--link: hsl(205 60% 50%);
 }
 
 .light {
-	--background: hsl(0 0% 100%);
-	--foreground: hsl(222.2 47.4% 11.2%);
-
-	--primary: hsl(221.2 83.2% 53.3%);
-	--primary-foreground: hsl(210 40% 98%);
-	--primary-hover: hsl(hsl(221.2 83.2% 47%));
-
-	--secondary: hsl(210 40% 96.1%);
-	--secondary-foreground: hsl(222.2 47.4% 11.2%);
-
-	--destructive: hsl(0 84.2% 60.2%);
-	--destructive-foreground: hsl(210 40% 98%);
-
-	--muted: hsl(210 40% 96.1%);
-	--muted-variant: hsl(210 34% 92%);
-	--muted-foreground: hsl(215.4 16.3% 46.9%);
-
-	--accent: hsl(180 70% 60%);
-	--accent-foreground: hsl(210 40% 98%);
-
-	--border: hsl(214.3 31.8% 91.4%);
-	--input: hsl(214.3 31.8% 91.4%);
-	--ring: hsl(221.2 83.2% 53.3%);
+	/* todo */
 }
 
 * {
@@ -108,11 +87,12 @@ h3,
 h4 {
 	margin: 0;
 	line-height: 1.2;
+	color: var(--foreground);
 }
 
 a {
 	text-decoration: none;
-	color: inherit;
+	color: var(--link);
 }
 
 .button {
