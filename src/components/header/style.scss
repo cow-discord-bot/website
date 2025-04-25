@@ -4,10 +4,10 @@ header {
 	left: 0;
 	width: 100%;
 	padding: 1rem 0;
-	background-color: var(--background-color);
+	background-color: var(--background);
 	backdrop-filter: blur(10px);
 	z-index: 1000;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border);
 
 	.container {
 		display: flex;
@@ -27,7 +27,7 @@ header {
 		h2 {
 			font-weight: bold;
 			font-size: 1.25rem;
-			color: var(--foreground-color);
+			color: var(--foreground);
 		}
 	}
 
@@ -51,7 +51,7 @@ header {
 		.bar {
 			width: 1.5rem;
 			height: 2px;
-			background-color: var(--foreground-color);
+			background-color: var(--foreground);
 			margin-bottom: 0.375rem;
 
 			&:last-child {
@@ -75,25 +75,25 @@ header {
 
 			li a {
 				font-weight: 500;
-				color: var(--foreground-color);
+				color: var(--foreground);
 				text-decoration: none;
 				transition: color 0.3s ease;
 
 				&:hover {
-					color: var(--primary-color);
+					color: var(--primary);
 				}
 			}
 
 			.cta-button a {
-				background-color: var(--primary-color);
-				color: var(--primary-foreground-color);
+				background-color: var(--primary);
+				color: var(--primary-foreground);
 				padding: 0.5rem 1rem;
 				border-radius: 0.25rem;
 				font-weight: 500;
 				transition: background-color 0.3s ease;
 
 				&:hover {
-					background-color: var(--primary-hover-color);
+					background-color: var(--primary-hover);
 				}
 			}
 		}
@@ -103,8 +103,8 @@ header {
 			top: 100%;
 			left: 0;
 			width: 100%;
-			background-color: var(--background-color);
-			border-bottom: 1px solid var(--border-color);
+			background-color: var(--background);
+			border-bottom: 1px solid var(--border);
 			transform: translateY(-100%);
 			opacity: 0;
 			pointer-events: none;

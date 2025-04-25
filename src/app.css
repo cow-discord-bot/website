@@ -1,86 +1,55 @@
 :root {
-	--background: 0 0% 100%;
-	--foreground: 222.2 47.4% 11.2%;
+	--background: hsl(0 0% 100%);
+	--foreground: hsl(222.2 47.4% 11.2%);
 
-	--primary: 221.2 83.2% 53.3%;
-	--primary-foreground: 210 40% 98%;
-	--primary-hover: hsl(221.2 83.2% 47%);
+	--primary: hsl(221.2 83.2% 53.3%);
+	--primary-foreground: hsl(210 40% 98%);
+	--primary-hover: hsl(hsl(221.2 83.2% 47%));
 
-	--secondary: 210 40% 96.1%;
-	--secondary-foreground: 222.2 47.4% 11.2%;
+	--secondary: hsl(210 40% 96.1%);
+	--secondary-foreground: hsl(222.2 47.4% 11.2%);
 
-	--destructive: 0 84.2% 60.2%;
-	--destructive-foreground: 210 40% 98%;
+	--destructive: hsl(0 84.2% 60.2%);
+	--destructive-foreground: hsl(210 40% 98%);
 
-	--muted: 210 40% 96.1%;
-	--muted-variant: 210 34% 92%;
-	--muted-foreground: 215.4 16.3% 46.9%;
+	--muted: hsl(210 40% 96.1%);
+	--muted-variant: hsl(210 34% 92%);
+	--muted-foreground: hsl(215.4 16.3% 46.9%);
 
-	--accent: 180 70% 60%;
-	--accent-foreground: 210 40% 98%;
+	--accent: hsl(180 70% 60%);
+	--accent-foreground: hsl(210 40% 98%);
 
-	--border: 214.3 31.8% 91.4%;
-	--input: 214.3 31.8% 91.4%;
-	--ring: 221.2 83.2% 53.3%;
-
-	/* Convert HSL variables to actual colors for use in CSS */
-	--background-color: hsl(var(--background));
-	--foreground-color: hsl(var(--foreground));
-	--primary-color: hsl(var(--primary));
-	--primary-foreground-color: hsl(var(--primary-foreground));
-	--primary-hover-color: var(--primary-hover);
-	--secondary-color: hsl(var(--secondary));
-	--secondary-foreground-color: hsl(var(--secondary-foreground));
-	--muted-color: hsl(var(--muted));
-	--muted-variant-color: hsl(var(--muted-variant));
-	--muted-foreground-color: hsl(var(--muted-foreground));
-	--accent-color: hsl(var(--accent));
-	--accent-foreground-color: hsl(var(--accent-foreground));
-	--border-color: hsl(var(--border));
+	--border: hsl(214.3 31.8% 91.4%);
+	--input: hsl(214.3 31.8% 91.4%);
+	--ring: hsl(221.2 83.2% 53.3%);
 }
 
 .dark {
-	--background: 222.2 84% 4.9%;
-	--foreground: 210 40% 98%;
+	--background: hsl(222.2 84% 4.9%);
+	--foreground: hsl(210 40% 98%);
 
-	--primary: 217.2 91.2% 59.8%;
-	--primary-foreground: 222.2 47.4% 11.2%;
-	--primary-hover: hsl(217.2 91.2% 65%);
+	--primary: hsl(217.2 91.2% 59.8%);
+	--primary-foreground: hsl(222.2 47.4% 11.2%);
+	--primary-hover: hsl(hsl(217.2 91.2% 65%));
 
-	--secondary: 217.2 32.6% 17.5%;
-	--secondary-foreground: 210 40% 98%;
+	--secondary: hsl(217.2 32.6% 17.5%);
+	--secondary-foreground: hsl(210 40% 98%);
 
-	--destructive: 0 62.8% 30.6%;
-	--destructive-foreground: 210 40% 98%;
+	--destructive: hsl(0 62.8% 30.6%);
+	--destructive-foreground: hsl(210 40% 98%);
 
-	--muted: 217.2 32.6% 17.5%;
-	--muted-variant: 217.2 27% 22%;
-	--muted-foreground: 215 20.2% 65%;
+	--muted: hsl(217.2 32.6% 17.5%);
+	--muted-variant: hsl(217.2 27% 22%);
+	--muted-foreground: hsl(215 20.2% 65%);
 
-	--accent: 180 75% 35%;
-	--accent-foreground: 210 40% 98%;
+	--accent: hsl(180 75% 35%);
+	--accent-foreground: hsl(210 40% 98%);
 
-	--border: 217.2 32.6% 17.5%;
-	--input: 217.2 32.6% 17.5%;
-	--ring: 217.2 91.2% 59.8%;
-
-	/* Convert HSL variables to actual colors for use in CSS */
-	--background-color: hsl(var(--background));
-	--foreground-color: hsl(var(--foreground));
-	--primary-color: hsl(var(--primary));
-	--primary-foreground-color: hsl(var(--primary-foreground));
-	--primary-hover-color: var(--primary-hover);
-	--secondary-color: hsl(var(--secondary));
-	--secondary-foreground-color: hsl(var(--secondary-foreground));
-	--muted-color: hsl(var(--muted));
-	--muted-variant-color: hsl(var(--muted-variant));
-	--muted-foreground-color: hsl(var(--muted-foreground));
-	--accent-color: hsl(var(--accent));
-	--accent-foreground-color: hsl(var(--accent-foreground));
-	--border-color: hsl(var(--border));
+	--border: hsl(217.2 32.6% 17.5%);
+	--input: hsl(217.2 32.6% 17.5%);
+	--ring: hsl(217.2 91.2% 59.8%);
 }
 
-/* Global Styles */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -123,7 +92,7 @@ body {
 
 main {
 	flex: 1;
-	padding-top: 4rem; /* To account for the fixed header */
+	padding-top: 4rem;
 }
 
 .container {
@@ -145,7 +114,6 @@ a {
 	color: inherit;
 }
 
-/* Button Styles */
 .button {
 	display: inline-block;
 	padding: 0.8rem 1.5rem;
@@ -176,344 +144,4 @@ a {
 .button.secondary:hover {
 	background-color: rgba(0, 0, 0, 0.05);
 	transform: translateY(-2px);
-}
-
-/* Hero Section */
-.hero {
-	padding: 8rem 0 5rem;
-	background: linear-gradient(135deg, var(--background-color) 0%, var(--secondary-color) 100%);
-	position: relative;
-	overflow: hidden;
-}
-
-.hero::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.05) 0%, transparent 50%);
-}
-
-.hero .container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 2rem;
-	position: relative;
-	z-index: 1;
-}
-
-@media (max-width: 992px) {
-	.hero .container {
-		flex-direction: column;
-		text-align: center;
-	}
-}
-
-.hero .hero-content {
-	flex: 1;
-}
-
-@media (max-width: 992px) {
-	.hero .hero-content {
-		order: 2;
-	}
-}
-
-.hero h1 {
-	font-size: 3.5rem;
-	margin-bottom: 1rem;
-	background: linear-gradient(90deg, var(--foreground-color), var(--primary-color));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-}
-
-@media (max-width: 480px) {
-	.hero h1 {
-		font-size: 2.5rem;
-	}
-}
-
-.hero .tagline {
-	font-size: 1.5rem;
-	margin-bottom: 1.5rem;
-	color: var(--primary-color);
-}
-
-@media (max-width: 480px) {
-	.hero .tagline {
-		font-size: 1.2rem;
-	}
-}
-
-.hero .description {
-	font-size: 1.1rem;
-	margin-bottom: 2rem;
-	max-width: 600px;
-	color: var(--muted-foreground-color);
-}
-
-@media (max-width: 992px) {
-	.hero .description {
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-.hero .cta-buttons {
-	display: flex;
-	gap: 1rem;
-}
-
-@media (max-width: 992px) {
-	.hero .cta-buttons {
-		justify-content: center;
-	}
-}
-
-@media (max-width: 480px) {
-	.hero .cta-buttons {
-		flex-direction: column;
-		gap: 1rem;
-	}
-
-	.hero .cta-buttons .button {
-		width: 100%;
-		text-align: center;
-	}
-}
-
-.hero .hero-image {
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-@media (max-width: 992px) {
-	.hero .hero-image {
-		order: 1;
-		margin-bottom: 2rem;
-	}
-}
-
-.hero .bot-avatar {
-	width: 200px;
-	height: 200px;
-	background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-	animation: float 6s ease-in-out infinite;
-}
-
-.hero .bot-avatar span {
-	font-size: 5rem;
-}
-
-@keyframes float {
-	0% {
-		transform: translateY(0px);
-	}
-	50% {
-		transform: translateY(-20px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
-}
-
-/* Features Section */
-.features {
-	padding: 5rem 0;
-	background-color: var(--muted-color);
-}
-
-.features h2 {
-	text-align: center;
-	font-size: 2.5rem;
-	margin-bottom: 1rem;
-	color: var(--foreground-color);
-}
-
-.features .section-description {
-	text-align: center;
-	max-width: 700px;
-	margin: 0 auto 3rem;
-	color: var(--muted-foreground-color);
-}
-
-.features .features-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 2rem;
-}
-
-@media (max-width: 768px) {
-	.features .features-grid {
-		grid-template-columns: 1fr;
-	}
-}
-
-.features .feature-card {
-	background-color: var(--background-color);
-	border-radius: 8px;
-	padding: 2rem;
-	transition:
-		transform 0.3s ease,
-		box-shadow 0.3s ease;
-	position: relative;
-	overflow: hidden;
-	opacity: 0;
-	transform: translateY(30px);
-	transition:
-		opacity 0.6s ease,
-		transform 0.6s ease;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.features .feature-card.visible {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.features .feature-card:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.features .feature-card:hover .glow {
-	opacity: 1;
-}
-
-.features .feature-card .feature-icon {
-	font-size: 2.5rem;
-	margin-bottom: 1rem;
-	position: relative;
-	z-index: 1;
-}
-
-.features .feature-card h3 {
-	font-size: 1.5rem;
-	margin-bottom: 1rem;
-	color: var(--foreground-color);
-	position: relative;
-	z-index: 1;
-}
-
-.features .feature-card p {
-	color: var(--muted-foreground-color);
-	position: relative;
-	z-index: 1;
-}
-
-.features .feature-card .glow {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: radial-gradient(circle at center, rgba(0, 0, 0, 0.03) 0%, transparent 70%);
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	pointer-events: none;
-	z-index: 0;
-}
-
-.dark .features .feature-card .glow {
-	background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
-}
-
-/* Open Source Section */
-.open-source {
-	padding: 5rem 0;
-	text-align: center;
-	background-color: var(--secondary-color);
-}
-
-.open-source h2 {
-	font-size: 2.5rem;
-	margin-bottom: 1rem;
-	color: var(--foreground-color);
-}
-
-.open-source p {
-	max-width: 700px;
-	margin: 0 auto 2rem;
-	color: var(--muted-foreground-color);
-}
-
-/* Footer */
-footer {
-	background-color: var(--muted-color);
-	padding: 3rem 0;
-	border-top: 1px solid var(--border-color);
-}
-
-footer .container {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	gap: 2rem;
-}
-
-@media (max-width: 768px) {
-	footer .container {
-		flex-direction: column;
-	}
-}
-
-footer .footer-content {
-	flex: 1;
-	min-width: 300px;
-}
-
-footer .footer-logo {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-	margin-bottom: 1rem;
-}
-
-footer .footer-logo .bot-icon {
-	font-size: 1.5rem;
-}
-
-footer .footer-logo h3 {
-	color: var(--foreground-color);
-}
-
-footer .footer-links {
-	display: flex;
-	gap: 3rem;
-	flex-wrap: wrap;
-}
-
-footer .footer-links .link-group h4 {
-	color: var(--foreground-color);
-	margin-bottom: 1rem;
-}
-
-footer .footer-links .link-group ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-footer .footer-links .link-group ul li {
-	margin-bottom: 0.5rem;
-}
-
-footer .footer-links .link-group ul li a {
-	color: var(--muted-foreground-color);
-	transition: color 0.3s ease;
-}
-
-footer .footer-links .link-group ul li a:hover {
-	color: var(--primary-color);
 }
