@@ -6,7 +6,7 @@
 	--primary-foreground: hsl(220 10% 95%);
 	--primary-hover: hsl(215 25% 45%);
 
-	--secondary: hsl(220 12% 16%);
+	--secondary: hsl(220 12% 13%);
 	--secondary-foreground: hsl(220 10% 80%);
 
 	--destructive: hsl(0 30% 40%);
@@ -26,7 +26,29 @@
 }
 
 .light {
-	/* todo */
+	--background: hsl(210 20% 98%);
+	--foreground: hsl(220 15% 20%);
+
+	--primary: hsl(215 70% 80%);
+	--primary-foreground: hsl(0 0% 20%);
+	--primary-hover: hsl(215 70% 70%);
+
+	--secondary: hsl(210 20% 94%);
+	--secondary-foreground: hsl(220 15% 30%);
+
+	--destructive: hsl(0 65% 80%);
+	--destructive-foreground: hsl(0 0% 10%);
+
+	--muted: hsl(210 20% 94%);
+	--muted-variant: hsl(210 20% 90%);
+	--muted-foreground: hsl(220 10% 40%);
+
+	--accent: hsl(215 70% 80%);
+	--accent-foreground: hsl(0 0% 10%);
+
+	--border: hsl(210 20% 90%);
+	--input: hsl(210 20% 94%);
+	--ring: hsl(215 70% 50%);
 }
 
 * {
@@ -142,11 +164,11 @@ a {
 	width: 100%;
 	padding: 3rem;
 	border-radius: 1rem;
-	background: linear-gradient(145deg, hsl(220 12% 16%), hsl(220 12% 12%));
+	background: linear-gradient(145deg, var(--input), var(--muted));
 	box-shadow:
 		0 20px 25px -5px rgba(0, 0, 0, 0.2),
 		0 10px 10px -5px rgba(0, 0, 0, 0.1),
-		0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+		0 0 0 1px var(--border) inset;
 	text-align: center;
 	overflow: hidden;
 }

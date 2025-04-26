@@ -1,13 +1,13 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { onMount } from 'svelte';
 	import {
 		PUBLIC_BOT_NAME,
 		PUBLIC_GUILD_INVITE,
 		PUBLIC_GITHUB_USERNAME,
 		PUBLIC_GITHUB_REPO
 	} from '$env/static/public';
-	import './style.scss';
+	import ThemeSwitcher from './ThemeSwitcher.svelte';
+	import './Header.scss';
 
 	const navLinks = [
 		{ name: 'Dashboard', url: 'dashboard' },
@@ -34,15 +34,22 @@
 			<h2>{PUBLIC_BOT_NAME}</h2>
 		</a>
 
-		<div class="mobile-menu-button" on:click={toggleMobileMenu}>
+		<button
+			type="button"
+			class="mobile-menu-button"
+			onclick={toggleMobileMenu}
+			aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+			aria-expanded={mobileMenuOpen}
+		>
 			<Icon icon={mobileMenuOpen ? 'mdi:close' : 'mdi:menu'} width="24" height="24" />
-		</div>
+		</button>
 
 		<nav class:active={mobileMenuOpen}>
 			<ul>
 				{#each navLinks as link}
-					<li><a href={link.url} on:click={handleLinkClick}>{link.name}</a></li>
+					<li><a href={link.url} onclick={handleLinkClick}>{link.name}</a></li>
 				{/each}
+				<ThemeSwitcher />
 			</ul>
 		</nav>
 	</div>

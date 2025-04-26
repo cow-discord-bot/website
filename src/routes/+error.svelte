@@ -13,10 +13,10 @@
 		<h2 class="error-title">Oops! Something went wrong</h2>
 		<p class="error-message">{message}</p>
 		<div class="error-actions">
-			<button on:click={() => (window.location.href = '/')} class="button primary"
+			<button onclick={() => (window.location.href = '/')} class="button primary"
 				>Return Home</button
 			>
-			<button on:click={() => location.reload()} class="button secondary">Try Again</button>
+			<button onclick={() => location.reload()} class="button secondary">Try Again</button>
 		</div>
 	</div>
 </div>
