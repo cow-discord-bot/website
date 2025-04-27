@@ -33,14 +33,11 @@
 			description: "<a href='https://news.ycombinator.com/item?id=3067434'>Yes</a>."
 		}
 	];
-
-	let className = '';
-	export { className as class };
 </script>
 
 <div class="faq">
 	<h1 class="accordion-title">FAQ</h1>
-	<div class="accordion {className}" {...$root}>
+	<div class="accordion" {...$root}>
 		{#each items as { id, title, description }, i}
 			<div use:melt={$item(id)} class="accordion-item {$isSelected(id) ? 'is-active' : ''}">
 				<h2 class="accordion-header">
