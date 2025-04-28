@@ -34,8 +34,10 @@ header {
 		display: none;
 		cursor: pointer;
 		color: var(--foreground);
+		background-color: var(--background);
 		padding: 0.5rem;
-		border-radius: 0.25rem;
+		border-radius: 0.4rem;
+		border: 0rem;
 		transition: background-color 0.2s ease;
 		z-index: 1100;
 
