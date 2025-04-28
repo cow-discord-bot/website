@@ -7,6 +7,7 @@
 		PUBLIC_GITHUB_USERNAME,
 		PUBLIC_GITHUB_REPO
 	} from '$env/static/public';
+	import Icon from '@iconify/svelte';
 	import './style.scss';
 
 	const {
@@ -16,7 +17,7 @@
 		multiple: true
 	});
 
-	const items = [
+	const faqItems = [
 		{
 			id: 'item-1',
 			title: 'Can I use my own bot account?',
@@ -33,47 +34,69 @@
 			description: "<a href='https://news.ycombinator.com/item?id=3067434'>Yes</a>."
 		}
 	];
+
+	const features = [
+		{
+			name: 'Automoderation',
+			description:
+				'A powerful Automod with regex, flexible matching, custom punishments, role ignores, and timeframe-based actions.<br><br>' +
+				'Easy setup for blocking swearing, slurs, scam links, and server invites.<br><br>' +
+				'Image scanning that searches for automodded text to prevent bypassing.',
+			icon: 'material-symbols:shield'
+		}
+	];
 </script>
 
-<div class="faq">
-	<h1 class="accordion-title">FAQ</h1>
-	<div class="accordion" {...$root}>
-		{#each items as { id, title, description }, i}
-			<div use:melt={$item(id)} class="accordion-item {$isSelected(id) ? 'is-active' : ''}">
-				<h2 class="accordion-header">
-					<button
-						use:melt={$trigger(id)}
-						class="accordion-trigger {i !== 0 ? 'has-border' : ''}"
-						aria-expanded={$isSelected(id)}
-					>
-						<span>{title}</span>
-						<svg
-							class="accordion-icon"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						>
-							<polyline points="6 9 12 15 18 9"></polyline>
-						</svg>
-					</button>
-				</h2>
-				{#if $isSelected(id)}
-					<div
-						class="accordion-content"
-						use:melt={$content(id)}
-						transition:slide={{ duration: 300, easing: cubicOut }}
-					>
-						<div class="accordion-content-inner">
-							{@html description}
-						</div>
-					</div>
-				{/if}
+<div class="page">
+	<div class="feature-list">
+		{#each features as { name, description, icon }, i}
+			<div class="feature {i % 2 == 0 ? 'left' : 'right'}">
+				<Icon {icon} class="feature-icon" width="30" height="30" />
+				<h2 class="feature-title">{name}</h2>
+				<p class="feature-description">{@html description}</p>
 			</div>
 		{/each}
+	</div>
+	<div class="faq">
+		<h1 class="accordion-title">FAQ</h1>
+		<div class="accordion" {...$root}>
+			{#each faqItems as { id, title, description }, i}
+				<div use:melt={$item(id)} class="accordion-item {$isSelected(id) ? 'is-active' : ''}">
+					<h2 class="accordion-header">
+						<button
+							use:melt={$trigger(id)}
+							class="accordion-trigger {i !== 0 ? 'has-border' : ''}"
+							aria-expanded={$isSelected(id)}
+						>
+							<span>{title}</span>
+							<svg
+								class="accordion-icon"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg>
+						</button>
+					</h2>
+					{#if $isSelected(id)}
+						<div
+							class="accordion-content"
+							use:melt={$content(id)}
+							transition:slide={{ duration: 300, easing: cubicOut }}
+						>
+							<div class="accordion-content-inner">
+								{@html description}
+							</div>
+						</div>
+					{/if}
+				</div>
+			{/each}
+		</div>
 	</div>
 </div>
