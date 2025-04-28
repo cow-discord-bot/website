@@ -43,6 +43,69 @@
 				'Easy setup for blocking swearing, slurs, scam links, and server invites.<br><br>' +
 				'Image scanning that searches for automodded text to prevent bypassing.',
 			icon: 'material-symbols:shield'
+		},
+		{
+			name: 'Spam Protection',
+			description:
+				'Detects repeated messages, excessive caps, markdown abuse, mass pings and more.',
+			icon: 'maki:police'
+		},
+		{
+			name: 'Role Menus',
+			description:
+				'Support for buttons, dropdowns, and classic role menus.<br><br>' +
+				'Single-role and multi-role selection modes.<br><br>' +
+				'Fast setup via slash command or web config.',
+			icon: 'fa-solid:laugh'
+		},
+		{
+			name: 'Ticket System',
+			description:
+				'Custom ticket types with creation forms (like GitHub issue templates).<br><br>' +
+				'Auto-instructions per type (instructions, quick info, etc.).<br><br>' +
+				'Archive and upload your tickets so they never get lost.',
+			icon: 'material-symbols:mail'
+		},
+		{
+			name: 'Action Logging',
+			description:
+				'Track anything and everything going on across your server.<br><br>' +
+				'Customize what logs you want, where they go, who they ping and more',
+			icon: 'fa6-solid:magnifying-glass'
+		},
+		{
+			name: 'Custom Command Builder',
+			description:
+				'Web-based GUI to create custom commands.<br><br>' +
+				'Support for dynamic arguments, cooldowns, and permission checks.',
+			icon: 'mdi:lego'
+		},
+		{
+			name: 'Server Stats & Analytics',
+			description:
+				'Live stats channels for member count, boosts, GitHub downloads, etc.<br><br>' +
+				'Peak active hours, growth charts, and mod-action summaries.<br><br>' +
+				'Exportable CSV reports.',
+			icon: 'mdi:chart-line'
+		},
+		{
+			name: 'Captcha Verification',
+			description: 'Require a captcha verification to gain access to the server.',
+			icon: 'bx:bot'
+		},
+		{
+			name: 'Social Media Alerts',
+			description:
+				'Auto announcements for nearly all social media uploads/livestreams.<br><br>' +
+				'Youtube, Twitter, Twitch, Kick, Instagram, TikTok + more<br><br>',
+			icon: 'mdi:youtube'
+		},
+		{
+			name: 'Auto Responses',
+			description:
+				'Keyword, phrase, starts/ends/contains, or full regex triggers.<br><br>' +
+				'Static replies or dynamic context-aware messages.',
+			icon: 'material-symbols:chat'
 		}
 	];
 </script>

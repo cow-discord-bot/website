@@ -50,17 +50,19 @@
 		align-self: flex-end;
 	}
 }
+
 .feature-icon {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 0.5rem;
-	margin-top: -0.8rem;
+	margin-top: -1.9rem;
 }
 
 .feature-title {
 	display: inline-block;
 	vertical-align: middle;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
+	font-size: 25px;
 }
 
 .feature-description {
